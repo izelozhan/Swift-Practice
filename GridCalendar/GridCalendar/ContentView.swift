@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    private let layout: [GridItem] = Array(repeating: GridItem(.flexible(minimum: 40)), count: 7)
+    private let layout: [GridItem] = Array(repeating: GridItem(.flexible(minimum: 40)), count: 8)
 
     var body: some View {
         ScrollView {
@@ -17,7 +17,7 @@ struct ContentView: View {
                 ForEach(year, id: \.name) { month in
                     Section(header:
                         Text(month.name)
-                            .font(.headline)
+                        .font(.largeTitle)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 12)
                     ) {
@@ -54,8 +54,6 @@ struct Month {
         self.days = (1...numberOfDays).map { Day(value: $0) }
     }
 }
-
-// MARK: - Data
 
 let year: [Month] = [
     Month(name: "January",   numberOfDays: 31),
