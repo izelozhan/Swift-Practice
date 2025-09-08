@@ -1,3 +1,13 @@
+//
+//  Rock-Paper-Scissors.swift
+//  
+//
+//  Created by Izel on 9/8/25.
+//
+
+import Foundation
+
+
 //user choice
 
 func getUserChoice(userInput: String) -> String {
@@ -17,7 +27,7 @@ func getComputerChoice() -> String{
     return "rock"
     case 1:
     return "paper"
-    case 2: 
+    case 2:
     return "scissors"
     default:
     return "Something went wrong"
@@ -47,11 +57,11 @@ func determineWinner(_ userChoice: String, _ compChoice: String) -> String {
     } else if compChoice == "paper" {
       decision = "The user won"
     }
-    default: 
+    default:
     return "Something went wrong"
   }
   return decision
-} 
+}
 
 var userChoice = getUserChoice(userInput: "paper")
 var compChoice = getComputerChoice()

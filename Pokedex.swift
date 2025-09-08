@@ -1,3 +1,12 @@
+//
+//  Pokedex.swift
+//  
+//
+//  Created by Izel on 9/8/25.
+//
+
+import Foundation
+
 
 class Pokemon {
   var num = 0

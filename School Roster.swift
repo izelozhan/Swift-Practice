@@ -1,3 +1,12 @@
+//
+//  School Roster\.swift
+//  
+//
+//  Created by Izel on 9/8/25.
+//
+
+import Foundation
+
 var spanish101: Set = ["Angela", "Declan", "Aldany", "Alex", "Sonny", "Alif", "Skyla"]
 var german101: Set = ["Angela", "Alex", "Declan", "Kenny", "Cynara", "Adam"]
 var advancedCalculus: Set = ["Cynara", "Gabby", "Angela", "Samantha", "Ana", "Aldany", "Galina", "Jasmine"]

@@ -1,3 +1,12 @@
+//
+//  Morse Decoder.swift
+//  
+//
+//  Created by Izel on 9/8/25.
+//
+
+import Foundation
+
 var englishText = "this is a secret message"
 
 var secretMessage = ".... --- .-- -.. -.--   .--. .- .-. - -. . .-."
@@ -81,7 +90,7 @@ for (letter, morseChar) in letterToMorse {
 for morseValue in morseCodeArray {
   if let letterChar = morseToLetter[morseValue] {
     decodedMessage += letterChar
-  } else { 
+  } else {
     decodedMessage += " "
   }
 }
